@@ -26,6 +26,20 @@
     body {
         padding: 0;
     }
+    :root {
+        --bgcl: #fff9db;
+        --hover: #e76f51;
+        --size-btn: 15px 15px;
+        --btn-color: #f4a261;
+        --footer-bg: #eab308;
+        --titile: #000000;
+        --color: #333333;
+        --desc: #666666;
+        --seprato: #f3e5f5;
+    }
+    .guarantee-icon:hover {
+        background-color: var(--hover);
+    }
     .container {
         border: none;
     }

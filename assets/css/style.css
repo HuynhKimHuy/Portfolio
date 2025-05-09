@@ -9,7 +9,6 @@ html {
 body {
     height: 100vh;
     font-size: 1.6rem;
-    padding: max(15px, 1%);
     scroll-behavior: smooth;
     font-family: Poppins;
 }
@@ -19,14 +18,14 @@ body {
     margin: 0 auto;
 }
 :root {
-    --bgcl: #fff9db;
-    --hover: #e76f51;
+    --bgcl: #0a0a0a;
+    --hover: Gold;
     --size-btn: 15px 15px;
-    --btn-color: #f4a261;
-    --footer-bg: #eab308;
-    --titile: #000000;
-    --color: #333333;
-    --desc: #666666;
+    --btn-color: #d4af37;
+    --footer-bg: #121212;
+    --titile: #d4af37;
+    --color: #a3a3a3;
+    --desc: #f5f5f5;
     --seprato: #f3e5f5;
 }
 .btn {
@@ -268,10 +267,6 @@ body {
     margin-top: 50px;
     justify-content: space-between;
     gap: 40px;
-}
-
-.nav-name {
-    margin-bottom: 15px;
 }
 
 .foot-title {

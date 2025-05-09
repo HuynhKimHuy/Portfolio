@@ -32,13 +32,28 @@
     </head>
 
     <body>
+        <!-- pc haeader  -->
         <header class="header">
             <div class="container">
                 <!-- navbar -->
                 <nav class="navbar">
+                    <!-- nav Mobile-tablet -->
+                    <label
+                        for="nav-toggle"
+                        class="nav-toggle-label show-on-mobile">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                                fill="currentColor" />
+                        </svg>
+                    </label>
                     <!-- navname -->
 
                     <h2 class="nav-name">KIMHUY</h2>
+
                     <!-- nav_menu -->
                     <ul class="nav_menu hiden-on-mobile">
                         <li>
@@ -127,6 +142,28 @@
             </div>
         </header>
 
+        <!-- mobile header -->
+        <header class="mobile_header hiden-on-tablet">
+            <input
+                type="checkbox"
+                id="nav-toggle"
+                class="menu_checkbox"
+                hidden />
+            <!-- over play -->
+            <label for="nav-toggle" class="menu-overplay"> </label>
+
+            <!-- menu content -->
+            <div class="menu-content">
+                <h2 class="nav-name">KIMHUY</h2>
+                <p class="menu-content-title head_sub-title">
+                    Hiện tại vẫn còn đang trong giai đoạn cập nhật và phát
+                    triển, nói chung là còn lười , nên chưa có gì cả. Mọi người
+                    có thể tham khảo một số dự án của mình trên github nhé.
+                </p>
+            </div>
+        </header>
+
+        <!-- about -->
         <section class="about">
             <div class="container">
                 <div class="seprato hiden-on-mobile">Who I Am</div>

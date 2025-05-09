@@ -1,14 +1,19 @@
 /* giao dien cho pc */
 @media screen and (min-width: 992px) {
+    .show-on-mobile {
+        display: none;
+    }
+    .hiden-on-tablet {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 991.98px) {
     body {
         padding: 0;
     }
-    .container {
-        border: 5px solid green;
-        border-radius: none;
+    .show-on-mobile {
+        display: none;
     }
     .about_infor {
         margin-left: 0;
@@ -21,21 +26,51 @@
     }
 }
 @media screen and (max-width: 991.98px) and (min-width: 768px) {
+    .hiden-on-tablet {
+        display: none;
+    }
 }
 @media screen and (max-width: 767px) {
-    body {
-        padding: 0;
+    .show-on-mobile {
+        display: block;
     }
-    :root {
-        --bgcl: #fff9db;
-        --hover: #e76f51;
-        --size-btn: 15px 15px;
-        --btn-color: #f4a261;
-        --footer-bg: #eab308;
-        --titile: #000000;
-        --color: #333333;
-        --desc: #666666;
-        --seprato: #f3e5f5;
+    .hiden-on-mobile {
+        display: none;
+    }
+    .menu-overplay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    .menu-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background-color: var(--bgcl);
+        padding: 20px;
+        transform: translateX(-100%);
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+    .menu_checkbox:checked ~ .menu-overplay {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    .menu_checkbox:checked ~ .menu-content {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+
+    .navbar label svg {
+        width: 30px;
+        height: 30px;
+        color: var(--btn-color);
     }
     .guarantee-icon:hover {
         background-color: var(--hover);
@@ -51,9 +86,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .hiden-on-mobile {
-        display: none;
-    }
+
     .guarantee {
         display: grid;
     }
